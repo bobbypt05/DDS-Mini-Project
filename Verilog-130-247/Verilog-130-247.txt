@@ -1,0 +1,37 @@
+
+Title of the project :- Automatic room power controller using bidirectional visitor counter.
+
+Verilog coding done in two model : 1]Behavioural Modelling
+								   2]Dataflow Modelling
+									
+Brief about Behavioral Modelling:  In the code , First the upperlimit is set to some value which can be set from 1 to 1023.
+                                   Modified Up down counter module is than called as person enters and exits the room . In Modified
+								   counter module the condition of underflow and overflow is checked and accordingly the door is opened and
+								   closed . As the count changes the (binary to bcd ) module is called which converts the binary into the
+						       	   corresponding BCD. The BCD code is given to ( BCD to 7-segment decoder ) which glows the corresponding 
+								   number on the screen and the output is displayed on the display.
+
+Brief about Dataflow Modelling:  In the code , First the upperlimit is set to some value which can be set from 1 to 1023.   
+                                 Modified Up down counter module is than called as person enters and exits the room . In Modified
+								 counter module the condition of underflow and overflow is checked and accordingly the door is opened and
+								 closed . As the count changes the (binary to bcd ) module is called which converts the binary into the
+								 corresponding the BCD . The BCD code is given to ( BCD to 7-segment decoder ) which glows the corresponding 
+								 number on the screen and the output is displayed on the display.
+
+Brief Explanation: The aim of the project is to automate the basic components in a room which would otherwise require to be done manually. The basic components addressed here are
+                   the electricity in a room, maximum occupancy of a room and the entry/exit doors of a room. These components can be controlled based on the number of people in the room.
+                   It is very important to save energy but very few buildings have the needed technology to automatically control power. This leads to drastic wastage of power. 
+                   Our model aims to automatically control the power in a room. This model also has the additional functionality of limiting the number of people in the room thus 
+                   preventing congestion and overuse of resources in the room. 									
+
+Functionalities: 1) Controls the power in the room to save energy based on the count of people inside the room
+                 2) Controls the entry and exit door of the room according to the count of people inside the room
+                 3) Accepts input on the maximum occupancy of room and restricts people from entering the room when maximum limit is reached
+                 4) Checks for underflow and overflow in count
+                 5) 7 Segment Display
+
+Applications :- This can be used in classrooms to keep check of attendance, in trains to save power if no one is there in the compartment, lecture halls, theatres, conference rooms to keep count of 
+                people entering and leaving and control the  power  accordingly.  The  visitor counter has wide applications in business and marketing too. The people counter industry has been forecasted by ABI Research to grow upward of 3 billion USD(source Wikipedia).
+
+Submitted by :- Bobby Patil ( 16CO130 )
+				Shashank P  ( 16CO247 )
